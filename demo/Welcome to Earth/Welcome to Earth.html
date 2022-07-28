@@ -1,0 +1,681 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Earth——Carbon-based Biological Association</title>
+    <link rel="shortcut icon" href="./网页图标.png">
+    <!-- <link rel="stylesheet" type="text/css" href="./css1.css" /> -->
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #container {
+        position: relative;
+        width: 2010px;
+        height: 900px;
+        margin: auto;
+        color: indianred;
+        background-size: 2010px 900px;
+        min-width: 2010px;
+        /* background: url(./3.jpg); */
+        background-repeat: no-repeat;
+        background-position: center 0;
+      }
+
+      .logo {
+        width: 2010px;
+        height: 900px;
+        position: absolute;
+      }
+
+      .main {
+        width: 900px;
+        height: 545px;
+        margin: 285px 26px 9px 575px;
+        background-color: white;
+        position: absolute;
+        border: white 2px;
+        border-radius: 20px;
+      }
+
+      .header {
+        margin: 0px 244px -1px 280px;
+        /* background-color: yellow; */
+      }
+
+      .daohanglan {
+        width: 300px;
+        height: 75px;
+        margin: -18px 12px 0px 379px;
+        padding: 9px;
+      }
+
+      .daohanglan ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* background-color: rgb(178, 108, 211); */
+      }
+
+      .daohanglan li {
+        float: left;
+      }
+
+      .daohanglan li a {
+        font-family: 方正小标宋简体;
+        display: inline-block;
+        font-size: 25px;
+        color: #5484cd;
+        text-align: center;
+        padding: 4px 20px;
+        text-decoration: none;
+      }
+
+      .daohanglan li a:hover {
+        background-color: rgb(96, 126, 190);
+        color: white;
+      }
+
+      .uid1 {
+        width: 29px;
+        height: 26px;
+        margin: -10px 48px 7px 349px;
+        font-family: 方正小标宋简体;
+        color: #5484cd;
+        font-size: 23px;
+      }
+
+      .uid2 {
+        width: 616px;
+        height: 29px;
+        margin: -31px 30px 14px 285px;
+        /* background-color: aqua; */
+        font-family: 方正小标宋简体;
+        color: #5484cd;
+        font-size: 23px;
+      }
+
+      #useridError {
+        font-family: 方正小标宋简体;
+        font-size: 16px;
+      }
+
+      .uname1 {
+        width: 25px;
+        height: 9px;
+        margin: 28px 0px 90px 292px;
+        padding: 0px 0px 0px 14px;
+        /* background-color: chocolate; */
+        font-family: 方正小标宋简体;
+        color: #5484cd;
+        font-size: 23px;
+      }
+
+      .uname2 {
+        width: 423px;
+        height: 50px;
+        margin: -6px 1px 30px 282px;
+        /* background-color: rgb(108 211 127); */
+        font-family: 方正小标宋简体;
+        color: #5484cd;
+        font-size: 23px;
+      }
+
+      #usernameError {
+        font-family: 方正小标宋简体;
+        font-size: 16px;
+      }
+
+      .usex1 {
+        width: 616px;
+        height: 30px;
+        margin: -3px -4px 29px 327px;
+        font-family: 方正小标宋简体;
+        color: #5484cd;
+        font-size: 23px;
+      }
+
+      .usex2 {
+        width: 430px;
+        height: 43px;
+        margin: -29px 24px 33px 394px;
+        /* background-color: green; */
+        font-family: 方正小标宋简体;
+        color: #5484cd;
+        font-size: 23px;
+      }
+
+      .upw1 {
+        width: 616px;
+        height: 50px;
+        margin: -34px 24px 34px 283px;
+        /* background-color: pink; */
+        font-family: 方正小标宋简体;
+        color: #5484cd;
+        font-size: 23px;
+      }
+
+      #passwordError {
+        font-family: 方正小标宋简体;
+        font-size: 16px;
+      }
+
+      .upw2 {
+        width: 616px;
+        height: 42px;
+        margin: -34px 24px 34px 283px;
+        /* background-color:rgb(182, 50, 50); */
+        font-family: 方正小标宋简体;
+        color: #5484cd;
+        font-size: 23px;
+      }
+
+      #confirmPwdError {
+        font-family: 方正小标宋简体;
+        font-size: 16px;
+      }
+
+      .uyz1 {
+        width: 237px;
+        height: 33px;
+        padding: 15px 21px 10px 15px;
+        margin: 89px 26px 58px 32px;
+        /* background-color:coral; */
+        font-family: 方正小标宋简体;
+        color: #5484cd;
+        font-size: 23px;
+      }
+
+      .uyz2 {
+        width: 639px;
+        height: 28px;
+        margin: -28px 26px 14px 259px;
+        /* background-color:rgb(100, 236, 111); */
+        font-family: 方正小标宋简体;
+        color: #5484cd;
+        font-size: 23px;
+      }
+
+      #userid {
+        margin: 0px 6px 3px 107px;
+      }
+
+      #username {
+        margin: 7px 3px 20px 5px;
+      }
+
+      #password {
+        margin: 0px 4px 3px 10px;
+      }
+
+      #confirmPwd {
+        margin: 0px 4px 3px 10px;
+      }
+
+      #l6 {
+        width: 120px;
+        margin: 0px 15px 17px -43px;
+      }
+
+      input {
+        color: #5484cd;
+        font-family: 方正小标宋简体;
+        font-size: 18px;
+      }
+
+      .style1 {
+        border-radius: 10px;
+        font-size: 22px;
+        border-style: groove;
+        border: 1.4px;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+        border-color: rgba(85, 85, 85, 0.212);
+      }
+
+      .style1:focus {
+        border: 1.4px solid #5484cd;
+      }
+
+      .style2 {
+        transform: scale(1.2);
+      }
+
+      .bt {
+        width: 234px;
+        height: 54px;
+        margin: 0px 34px 26px 422px;
+        /* background-color: aquamarine; */
+      }
+      .button {
+        background-color: rgb(86, 118, 179);
+        border: none;
+        padding: 16px 32px;
+        text-align: center;
+        font-family: 方正小标宋简体;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        transition-duration: 0.5s;
+        cursor: pointer;
+      }
+
+      .button1 {
+        background-color: white;
+        color: rgb(71, 95, 159);
+        border: 1.5px solid #5484cd;
+      }
+
+      .button1:hover {
+        background-color: rgb(96, 126, 190);
+        color: white;
+      }
+
+      .attention {
+        width: 900px;
+        height: 0px;
+        font-family: 方正小标宋简体;
+        color: #5484cd;
+        font-size: 13px;
+        margin: -14px 34px 34px 220px;
+        /* background-color: aquamarine; */
+      }
+
+      .p1 {
+        color: white;
+        font-family: 方正小标宋简体;
+        width: 348px;
+        height: 20px;
+        margin: 50px 32px 34px 322px;
+        /* background-color:burlywood; */
+      }
+
+      .p1 a {
+        text-decoration: none;
+      }
+
+      .p1 a:link {
+        color: white;
+      }
+
+      .p1 a:visited {
+        color: white;
+      }
+
+      .p1 a:hover {
+        color: rgb(219, 219, 219);
+      }
+
+      .p1 a:active {
+        color: white;
+      }
+
+      .p2 {
+        color: white;
+        font-family: 方正小标宋简体;
+        width: 447px;
+        height: 20px;
+        margin: -28px 32px 34px 306px;
+        /* background-color:rgb(52, 90, 160); */
+      }
+
+      #code {
+        width: 85px;
+        height: 28px;
+        font-family: Fixedsys;
+        font-weight: bold;
+        border: 0;
+        letter-spacing: 3px;
+        color: #5784c2;
+      }
+    </style>
+    <script type="text/javascript">
+      var code;
+
+      function createCode() {
+        code = "";
+        var codeLength = 4;
+        var checkCode = document.getElementById("code");
+        var random = new Array(
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K",
+          "L",
+          "M",
+          "N",
+          "O",
+          "P",
+          "Q",
+          "R",
+          "S",
+          "T",
+          "U",
+          "V",
+          "W",
+          "X",
+          "Y",
+          "Z"
+        );
+        for (var i = 0; i < codeLength; i++) {
+          var index = Math.floor(Math.random() * 36);
+          code += random[index];
+        }
+        checkCode.value = code;
+      }
+
+      function validate() {
+        var inputCode = document.getElementById("l6").value.toUpperCase();
+        if (inputCode.length <= 0) {
+          alert("请输入验证码!");
+        } else if (inputCode != code) {
+          alert("ERROR!");
+          createCode();
+          document.getElementById("input").value = "";
+        } else {
+          alert("NICE!");
+        }
+      }
+    </script>
+  </head>
+
+  <body onload="createCode()">
+    <div id="container">
+      <div class="logo" id="logoimg">
+        <script>
+            var img = document.createElement("img"); //创建一个img元素
+            img.src = "./logo.png"; //给img元素的src属性赋值
+            var p = document.getElementById("logoimg"); //获得dom对象
+            p.appendChild(img); //为dom添加子元素img
+        </script>
+        <!-- <img src="./logo.png" alt="logo" /> -->
+      </div>
+      <div class="main">
+        <div class="header">
+          <span id="cardimg"></span>
+          <script>
+                var img_ =document.createElement("img");
+                img_.src="./地球通行证.png";
+                var cardimg= document.getElementById("cardimg");
+                cardimg.appendChild(img_);
+          </script>
+          <!-- <img src="./地球通行证.png" alt="地球通行证" /> -->
+        </div>
+
+        <div class="daohanglan">
+          <ul>
+            <li><a href="./Welcome To Earth .html">登录</a></li>
+            <li><a href="./Welcome to Earth.html">注册</a></li>
+          </ul>
+        </div>
+        <div class="attention">
+          <p>
+            1.ID与角色名长度为6—12位(请勿使用奇怪的字符)
+            2.密码长度为6—18位(数字和字母结合)
+          </p>
+        </div>
+        <div class="list">
+          <form id="userFrom" method="get">
+            <span class="uid1">ID:</span>
+            <div class="uid2">
+              <span><input type="text" name="ID" class="style1" id="userid"></span><span id="useridError"></span>
+            </div>
+
+            <span class="uname1">角色名:</span>
+            <span><input type="text" name="name" class="style1" id="username"></span><span id="usernameError"></span>
+
+            <span class="usex1">性别：</span>
+            <div class="usex2">
+              <input type="radio" name="sex" value="1" class="style2">男
+              <input type="radio" name="sex" value="2" class="style2">女
+              <input type="radio" name="sex" value="3" class="style2">谜之生物
+            </div>
+
+            <div class="upw1">
+              <span>设置密码:</span><span><input type="password" name="password1" class="style1" id="password"></span><span id="passwordError"></span>
+            </div>
+
+            <div class="upw2">
+              <span>确认密码:</span><span><input type="password" name="password2" class="style1" id="confirmPwd"></span><span id="confirmPwdError"></span>
+            </div>
+
+            <div class="uyz2">
+              <span class="uyz1">验证码:</span><span>
+                <input type="text" name="yanzheng" class="style1" id="l6"></span>
+              <input type="button" id="code" onclick="createCode()">
+              <input type="button" value="确认" onclick="validate()">
+            </div>
+          </form>
+
+          <div class="bt">
+            <button class="button button1" id="submitBtn" onclick="lick()">
+              立即注册
+            </button>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="p1">
+            <p>
+              <a href="#f1">关于我们</a> |<a href="#f2">加入我们</a> |<a href="#f3">移动客户端</a>
+              | <a href="#f4">反馈与意见</a>
+            </p>
+          </div>
+          <div class="p2">
+            <p>版权所有：@Carbon-based Biological Association</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var backimg = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"];
+      document.getElementById("container").style.background =
+        "url(" + backimg[Math.floor(Math.random() * backimg.length)] + ")";
+    </script>
+    <script type="text/javascript">
+      var retVal = true;
+      var useridElt = document.getElementById("userid");
+      var useridErrorSpan = document.getElementById("useridError");
+      //id正则表达式
+      var useridRegExp = /^[a-zA-Z0-9_-]{6,12}$/;
+
+      //id验证开始
+      //id验证,失去焦点验证
+      useridElt.onblur = function () {
+        //判断username的value值是否为空
+        //清除前后空白
+        var userid = useridElt.value.trim();
+        useridElt.value = userid;
+        var useridRetVal = useridRegExp.test(userid);
+
+        //username不为空或全为空格开始验证
+        if (!(useridElt.value == "")) {
+          if (!useridRetVal) {
+            useridErrorSpan.innerHTML =
+              "<font color='indianred'>id格式错误</font>";
+          }
+        } else {
+          useridErrorSpan.innerHTML =
+            "<font color='indianred'>id不能为空</font>";
+        }
+      };
+      //获取焦点，清除span内容
+      useridElt.onfocus = function () {
+        //如果userid等于一个或多个空格
+        //清空非法value,使用index函数，结果等于-1，则不含有该字符串
+        if (!(useridErrorSpan.innerText.indexOf("不") == -1)) {
+          //如果useridError不为空串,字符串中含有"不"清空value
+          useridElt.value = "";
+        }
+        //清空span内容
+        useridErrorSpan.innerText = "";
+      };
+
+      var usernameElt = document.getElementById("username");
+      var usernameErrorSpan = document.getElementById("usernameError");
+      //用户名正则表达式
+      var usernameRegExp = /^[a-zA-Z0-9_-]{6,12}$/;
+
+      //用户名验证开始
+      //用户名验证,失去焦点验证
+      usernameElt.onblur = function () {
+        //判断username的value值是否为空
+        //清除前后空白
+        var username = usernameElt.value.trim();
+        usernameElt.value = username;
+        var usernameRetVal = usernameRegExp.test(username);
+
+        //username不为空或全为空格开始验证
+        if (!(usernameElt.value == "")) {
+          if (!usernameRetVal) {
+            usernameErrorSpan.innerHTML =
+              "<font color='indianred'>角色名格式错误</font>";
+          }
+        } else {
+          usernameErrorSpan.innerHTML =
+            "<font color='indianred'>角色名不能为空</font>";
+        }
+      };
+      //获取焦点，清除span内容
+      usernameElt.onfocus = function () {
+        //如果username等于一个或多个空格
+        //清空非法value,使用index函数，结果等于-1，则不含有该字符串
+        if (!(usernameErrorSpan.innerText.indexOf("不") == -1)) {
+          //如果usernameError不为空串,字符串中含有"不"清空value
+          usernameElt.value = "";
+        }
+        //清空span内容
+        usernameErrorSpan.innerText = "";
+      };
+
+      //密码验证，失去焦点验证
+      var passwordElt = document.getElementById("password");
+      var passwordErrorSpan = document.getElementById("passwordError");
+      var passwordRegExp = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z\\W]{6,18}$/;
+      //密码验证，失去焦点开始验证
+      passwordElt.onblur = function () {
+        //去除前后空白
+        var password = passwordElt.value.trim();
+        passwordElt.value = password;
+        //password不为空开始验证
+        if (!(passwordElt.value == "")) {
+          //密码格式验证
+          var passwordRetVal = passwordRegExp.test(password);
+          if (passwordRetVal) {
+          } else {
+            passwordErrorSpan.innerHTML =
+              "<font color='indianred'>格式错误：请使用数字和字母结合</font>";
+          }
+        } else {
+          //密码不能为空
+          passwordErrorSpan.innerHTML =
+            "<font color='indianred'>密码不能为空</font>";
+        }
+      };
+
+      //密码获得焦点，重复密码span内容清空
+      passwordElt.onfocus = function () {
+        //清空非法value,使用index函数，结果等于-1，则不含有该字符串
+        if (!(passwordErrorSpan.innerText.indexOf("不") == -1)) {
+          //如果passwordErrorSpan不为空串,字符串中含有"不"清空value
+          passwordElt.value = "";
+        }
+        //清空span内容
+        passwordErrorSpan.innerText = "";
+      };
+
+      //确认密码验证，失去焦点验证
+      var confirmPwdElt = document.getElementById("confirmPwd");
+      var confirmPwdErrorSpan = document.getElementById("confirmPwdError");
+
+      //密码验证，失去焦点开始验证
+      confirmPwdElt.onblur = function () {
+        //清除验证密码中的前后空白
+        var confirmPwd = confirmPwdElt.value.trim();
+        confirmPwdElt.value = confirmPwd;
+        //判断密码内容是否为空，不为空则开始验证
+        if (!(confirmPwdElt.value == "")) {
+          //重复密码内容不为空，开始验证
+          //判断密码是否为空，不为空则开始验证
+          if (passwordElt.value == "") {
+            confirmPwdErrorSpan.innerHTML =
+              "<font color='indianred'>密码不能为空</font>";
+          } else {
+            //判断密码和重复密码是否相等
+            if (passwordElt.value === confirmPwdElt.value) {
+            } else {
+              confirmPwdErrorSpan.innerHTML =
+                "<font color='indianred'>两次密码不一致</font>";
+            }
+          }
+        } else {
+          confirmPwdErrorSpan.innerHTML =
+            "<font color='indianred'>确认密码不能为空</font>";
+        }
+      };
+      //获取重复密码焦点时，清空span内数据，如果重复密码错误，则清空重复密码
+      confirmPwdElt.onfocus = function () {
+        //使用indexOf()方法判断span字符串中是否含有"失"字,结果等于-1，则不含有失字
+        if (!(confirmPwdErrorSpan.innerHTML.indexOf("失") == -1)) {
+          //清空非法重复密码值
+          confirmPwdElt.value = "";
+        }
+        //获取焦点时清除span内值
+        confirmPwdErrorSpan.innerText = "";
+      };
+
+      var submitElt = document.getElementById("submitBtn");
+
+      submitElt.onclick = function () {
+        if (
+          useridRetVal &&
+          usernameRetVal &&
+          passwordRetVal &&
+          passwordElt.value === confirmPwdElt.value
+        ) {
+          alert(
+            "注册成功!\n地球通行证编号:1333333333\n——Carbon-based Biological Association\n"
+          );
+        } else if (useridErrorSpan.innerText == "") {
+          useridElt.focus();
+          useridElt.blur();
+        } else if (usernameErrorSpan.innerText == "") {
+          usernameElt.focus();
+          usernameElt.blur();
+        } else if (passwordErrorSpan.innerText == "") {
+          passwordElt.focus();
+          passwordElt.blur();
+        } else if (confirmPwdElt.innerText == "") {
+          confirmPwdElt.focus();
+          confirmPwdElt.blur();
+        }
+      };
+    </script>
+  </body>
+</html>
