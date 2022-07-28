@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#container{
+    position: relative;
+    width: 2010px;
+    height:900px;
+    margin: auto;
+    color: indianred;
+    background-size: 2010px 900px;
+    min-width:2010px;
+    /* background: url(./3.jpg); */
+    background-repeat: no-repeat;
+    background-position:center 0;
+}
+
+.logo{
+    width: 2010px;
+    height:900px;
+    position: absolute;
+}
+
+.main{
+    width: 900px;
+    height: 545px;
+    margin: 285px 26px 9px 575px;
+    background-color: white;
+    position: absolute;
+    border: white 2px;
+    border-radius: 20px;
+}
+
+.header{
+    margin: 0px 244px -1px 280px;
+    /* background-color: yellow; */
+}
+
+.daohanglan{
+    width: 241px;
+    height: 75px;
+    margin: -18px 12px 0px 379px;
+    padding: 9px;
+}
+
+.daohanglan ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: rgb(178, 108, 211); */
+}
+
+.daohanglan li{
+    float: left;
+}
+
+.daohanglan li a{
+    font-family: 方正小标宋简体;
+    display: inline-block;
+    font-size: 33px;
+    color: #5484cd;
+    text-align: center;
+    padding: 4px 20px;
+    text-decoration: none;
+}
+
+.daohanglan li a:hover {
+    background-color: rgb(96,126,190);
+    color: white;
+}
+
+.uid1{
+    width: 45px;
+    height: 40px;
+    margin: 30px 0px 22px 365px;
+    font-family: 方正小标宋简体;
+    color: #5484cd;
+    font-size: 23px;
+}
+
+.uid2{
+    width: 616px;
+    height: 29px;
+    margin: 2px 30px 14px 288px;
+    /* background-color: aqua; */
+    font-family: 方正小标宋简体;
+    color: #5484cd;
+    font-size: 23px;
+}
+
+#useridError{
+    font-family: 方正小标宋简体;
+    font-size: 16px;
+}
+
+.upw1{
+    width: 616px;
+    height: 67px;
+    margin: 19px 34px 37px 365px;
+    /* background-color: pink; */
+    font-family: 方正小标宋简体;
+    color: #5484cd;
+    font-size: 23px;
+}
+
+
+.other1{
+    width: 616px;
+    height: 35px;
+    margin: -7px 34px 37px 365px;
+    /* background-color: greenyellow; */
+    font-family: 方正小标宋简体;
+    color: #5484cd;
+    font-size: 16px;
+}
+
+.other2{
+    width: 330px;
+    height: 79px;
+    margin: -32px 23px 4px 367px;
+    /* background-color: teal; */
+}
+
+.other2 img{
+    width: 50px;
+    height: 50px;
+}
+
+.othera{
+    text-decoration: none;
+}
+
+#passwordError{
+    font-family: 方正小标宋简体;
+    font-size: 16px;
+}
+
+
+#userid{
+    margin: 0px 6px 3px 76px;
+}
+
+
+#password{
+    margin: 0px 4px 3px 0px;
+}
+
+input{
+    color:#5484cd;
+    font-family: 方正小标宋简体;
+    font-size: 18px;
+}
+
+.style1{
+    border-radius: 10px;
+    font-size: 22px;
+    border-style: groove;
+    border: 1.4px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    border-color: rgba(85, 85, 85, 0.212);
+}
+
+.style1:focus {  
+    border: 1.4px solid #5484cd;
+}
+
+.style2{
+    transform: scale(1.2);
+}
+
+.bt{
+    width: 234px;
+    height:54px;
+    margin: -9px 34px 26px 440px;
+    /* background-color: aquamarine; */
+}
+.button{
+    background-color: rgb(86,118,179);
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    font-family:方正小标宋简体;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+  }
+
+.button1{
+    background-color: white; 
+    color: rgb(71,95,159);
+    border: 1.5px solid #5484cd;
+  }
+  
+.button1:hover {
+    background-color: rgb(96,126,190);
+    color: white;
+  }
+
+.attention{
+    width: 900px;
+    height: 0px;
+    font-family: 方正小标宋简体;
+    color: #5484cd;
+    font-size: 13px;
+    margin: -14px 34px 34px 220px;
+    /* background-color: aquamarine; */
+}
+
+.p1{
+    color: white;
+    font-family: 方正小标宋简体;
+    width: 348px;
+    height: 20px;
+    margin: 54px 32px 34px 338px;
+    /* background-color:burlywood; */
+}
+
+.p1 a{
+    text-decoration: none;
+}
+
+.p1 a:link{
+    color: white;
+}
+
+.p1 a:visited{
+    color: white;
+}
+
+.p1 a:hover{
+    color: rgb(219, 219, 219);
+}
+
+.p1 a:active{
+    color: white;
+}
+
+.p2{
+    color: white;
+    font-family: 方正小标宋简体;
+    width: 447px;
+    height: 20px;
+    margin: -30px 32px 34px 321px;
+    /* background-color:rgb(52, 90, 160); */
+}
+
